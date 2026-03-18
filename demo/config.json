@@ -1,0 +1,38 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "temperature": 0.3,
+  "max_tokens": 500,
+  "timeout_ms": 3000,
+  "classification": {
+    "confidence_threshold": 0.7,
+    "auto_escalate_below": 0.5
+  },
+  "escalation": {
+    "max_exchanges_before_escalate": 3,
+    "sentiment_threshold": -0.5,
+    "enterprise_auto_priority": "P1"
+  },
+  "rate_limits": {
+    "max_tickets_per_customer_per_hour": 20,
+    "max_ai_responses_per_minute": 100,
+    "circuit_breaker_failures": 5,
+    "circuit_breaker_window_seconds": 60
+  },
+  "validation": {
+    "safety_check": true,
+    "quality_check": true,
+    "tone_check": true,
+    "hold_on_failure": true
+  },
+  "channels": {
+    "intercom": { "enabled": true, "webhook_path": "/webhooks/intercom" },
+    "email": { "enabled": true, "inbox": "support@clouddash.io" },
+    "api": { "enabled": true, "path": "/api/tickets" }
+  },
+  "sla_hours": {
+    "P0": 0.5,
+    "P1": 2,
+    "P2": 8,
+    "P3": 24
+  }
+}

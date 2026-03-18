@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dashboard/dist/
+dashboard/tsconfig.tsbuildinfo
+*.db
+*.sqlite
+.env
+.DS_Store
+.claude/
